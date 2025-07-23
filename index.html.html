@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Energy Meter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Smart Energy Meter</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Overview</a></li>
+        <li><a href="#">Components</a></li>
+        <li><a href="#">Working</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Project Overview</h2>
+      <p>
+        This project is a smart energy meter designed using ESP32 to monitor voltage, current, and power in real-time. It also includes over/under-voltage protection using a relay and displays data on a web dashboard.
+      </p>
+    </section>
+
+    <section>
+      <h2>Components Used</h2>
+      <ul>
+        <li><strong>ESP32 (Microcontroller)</strong> – Central unit (Input + Output)</li>
+        <li><strong>ZMPT101B (Voltage Sensor)</strong> – AC voltage input</li>
+        <li><strong>ACS712 (Current Sensor)</strong> – AC current input</li>
+        <li><strong>Relay Module</strong> – Controls load based on voltage thresholds (Output)</li>
+        <li><strong>USB Power Bank</strong> – Power supply</li>
+        <li><strong>Resistors & Capacitors</strong> – Signal conditioning</li>
+        <li><strong>Buck Converter</strong> – To step down voltage to safe ESP32 levels</li>
+        <li><strong>Web Dashboard</strong> – Output display (via Wi-Fi)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Try Me!</h2>
+      <button onclick="changeBackground()">Change Theme Color</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Smart Energy Meter Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
